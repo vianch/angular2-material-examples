@@ -141,7 +141,7 @@ module.exports = {
              * Extracts SourceMaps for source files that as added as sourceMappingURL comment.
              *
              * See: https://github.com/webpack/source-map-loader
-             */
+
             {
                 test: /\.js$/,
                 loader: 'source-map-loader',
@@ -150,7 +150,7 @@ module.exports = {
                     root('node_modules/rxjs'),
                     root('node_modules/@angular')
                 ]
-            }
+            } */
 
         ],
 
@@ -262,7 +262,7 @@ module.exports = {
         }),
 
         // NOTE: To debug prod builds uncomment //debug lines and comment //prod lines
-        new UglifyJsPlugin({
+        /*new UglifyJsPlugin({
             // beautify: true, //debug
             // mangle: false, //debug
             // dead_code: false, //debug
@@ -298,11 +298,11 @@ module.exports = {
          * them with Content-Encoding
          *
          * See: https://github.com/webpack/compression-webpack-plugin
-         */
+
         new CompressionPlugin({
             regExp: /\.css$|\.html$|\.js$|\.map$/,
             threshold: 2 * 1024
-        })
+        }) */
 
     ],
 
