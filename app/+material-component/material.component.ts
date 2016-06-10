@@ -16,6 +16,7 @@ import {MD_TABS_DIRECTIVES} from '@angular2-material/tabs';
     moduleId: module.id,
     selector: "angular-material",
     template: require("./material.component.html"),
+    styles: [ require("./material.css").toString()],
     providers: [MdRadioDispatcher, MdIconRegistry],
     directives: [
         MD_SIDENAV_DIRECTIVES,
